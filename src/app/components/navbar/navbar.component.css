@@ -1,0 +1,12 @@
+.sidebarr::-webkit-scrollbar {
+  width: 0.4rem; /* You can adjust the width as needed */
+}
+
+.sidebarr::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb (the draggable part) */
+}
+
+.sidebarr::-webkit-scrollbar-track {
+  background: transparent; /* Hide the track (the bar) */
+}
+

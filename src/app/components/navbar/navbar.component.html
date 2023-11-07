@@ -1,0 +1,1144 @@
+<div class="flex h-full w-100">
+  
+  <div class="sidebar w-60 border-r-2">
+    <div
+      class="logo w-60 flex justify-center items-center border-b-0 border-r-0 border-gray-400"
+    >
+      <img class="w-36 h-16 p-3" src="/assets/logo.png" alt="logo" />
+    </div>
+    <div class="sidepanel border-t-2">
+      <div class="links">
+        <aside
+          id="sidebar-multi-level-sidebar "
+          class="fixed top-15 left-0 z-40 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0"
+          aria-label="Sidebar"
+        >
+          <div
+            class="h-view sidebarr px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800"
+          >
+            <ul class="space-y-2 font-light pl-3">
+              <h6 class="text-gray-600 text-xs mb-1">MAIN</h6>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example"
+                  data-collapse-toggle="dropdown-example"
+                >
+                  <img class="w-5 h-5" src="/assets/home.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Dashboard</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example" class="hidden py-1 space-y-1">
+                  <li>
+                    <a
+                      routerLink="dashboard"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Sales</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >E-commerce</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Crypto</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >CRM</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <h6 class="text-gray-600 text-xs mb-1">COMPONENTS</h6>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example"
+                  data-collapse-toggle="dropdown-example"
+                >
+                  <img class="w-5 h-5" src="/assets/widgets.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Widgets</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example2"
+                  data-collapse-toggle="dropdown-example2"
+                >
+                  <img class="w-5 h-5" src="/assets/database.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Elements</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example2" class="hidden py-1 space-y-1">
+                  <li *ngFor="let element of elements">
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >{{ element }}</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example3"
+                  data-collapse-toggle="dropdown-example3"
+                >
+                  <img class="w-5 h-5" src="/assets/widgets.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Apps</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example3" class="hidden py-1 space-y-1">
+                  <li >
+                    <a
+                      type="button"
+                      class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      aria-controls="dropdown-example31"
+                      data-collapse-toggle="dropdown-example31"
+                    >
+                      <!-- <img class="w-5 h-5 " src="/assets/database.png" alt=""> -->
+                      <span
+                        class="flex-1 ml-10 text-left whitespace-nowrap font-normal"
+                        >Maps</span
+                      >
+                      <svg
+                        class="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </a>
+                    <ul
+                      id="dropdown-example31"
+                      class="hidden py-1 ml-3 space-y-1"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                          >Leaflet Maps</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li >
+                    <a
+                    type="button"
+                    class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example32"
+                    data-collapse-toggle="dropdown-example32"
+                  >
+                    <!-- <img class="w-5 h-5 " src="/assets/database.png" alt=""> -->
+                    <span
+                      class="flex-1 ml-10 text-left whitespace-nowrap font-normal"
+                      >Calender</span
+                    >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    id="dropdown-example32"
+                    class="hidden py-1 ml-3 space-y-1"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Default Calender</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Full Calender</a
+                      >
+                    </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <a
+                    type="button"
+                    class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example33"
+                    data-collapse-toggle="dropdown-example33"
+                  >
+                    <!-- <img class="w-5 h-5 " src="/assets/database.png" alt=""> -->
+                    <span
+                      class="flex-1 ml-10 text-left whitespace-nowrap font-normal"
+                      >Tables</span
+                    >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    id="dropdown-example33"
+                    class="hidden py-1 ml-3 space-y-1"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Default Table</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Data Table</a
+                      >
+                    </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <a
+                    type="button"
+                    class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example34"
+                    data-collapse-toggle="dropdown-example34"
+                  >
+                    <!-- <img class="w-5 h-5 " src="/assets/database.png" alt=""> -->
+                    <span
+                      class="flex-1 ml-10 text-left whitespace-nowrap font-normal"
+                      >Blogs</span
+                    >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    id="dropdown-example34"
+                    class="hidden py-1 ml-3 space-y-1"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Blog </a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Blog Details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >Blog Post</a
+                      >
+                    </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <a
+                    type="button"
+                    class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example35"
+                    data-collapse-toggle="dropdown-example35"
+                  >
+                    <!-- <img class="w-5 h-5 " src="/assets/database.png" alt=""> -->
+                    <span
+                      class="flex-1 ml-10 text-left whitespace-nowrap font-normal"
+                      >File Manager</span
+                    >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    id="dropdown-example35"
+                    class="hidden py-1 ml-3 space-y-1"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >File Manager </a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >File Manager List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >File details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                        >File Attachments</a
+                      >
+                    </li>
+                    
+                  </ul>
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Chat</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Crypto Cureencies</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >User List</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Timeline</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Search Page</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example4"
+                  data-collapse-toggle="dropdown-example4"
+                >
+                  <img class="w-5 h-5" src="/assets/shield.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Advanced Ui</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example4" class="hidden py-1 space-y-1">
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Accordion</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Tabs</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Charts</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Sweet Alerts</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Range Slider</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Content Scroll Bar</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Modal</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Tooltip & Popover</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Progress</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Carousels</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Loaders</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Counters</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Ratings</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <h6 class="text-gray-600 text-xs mb-1">GENERAL</h6>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example5"
+                  data-collapse-toggle="dropdown-example5"
+                >
+                  <img class="w-5 h-5" src="/assets/heart-beat.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Icons</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example5" class="hidden py-1 space-y-1">
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Font Awesome</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Simple Line Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Themify Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Flag Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Feather Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Iconic Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Pe7 Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Typicons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Material Design Icons</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Weather Icons</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example6"
+                  data-collapse-toggle="dropdown-example6"
+                >
+                  <img class="w-5 h-5" src="/assets/document.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Forms</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example6" class="hidden py-1 space-y-1">
+                  <li>
+                    <a
+                      
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Form Elements</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Form Editor</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Form Element Sizes</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Form Treeview</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Form Wizards</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example7"
+                  data-collapse-toggle="dropdown-example7"
+                >
+                  <img class="w-5 h-5" src="/assets/profits.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Charts</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example7" class="hidden py-1 space-y-1">
+                  <li>
+                    <a
+                      
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Chart js</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Apexcharts</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Echarts</a
+                    >
+                  </li>
+                 
+                </ul>
+              </li>
+              <h6 class="text-gray-600 text-xs mb-1">PAGES</h6>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example8"
+                  data-collapse-toggle="dropdown-example8"
+                >
+                  <img class="w-5 h-5" src="/assets/paper.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Pages</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example8" class="hidden py-1 space-y-1">
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Profile</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Edit Profile</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Mail Compose</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Mail Inbox</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Empty</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >About</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Services</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >FAQS</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Terms</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Invoice</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Pricing Tables</a
+                    >
+                  </li>
+                  <li >
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Switcher</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example9"
+                  data-collapse-toggle="dropdown-example9"
+                >
+                  <img class="w-5 h-5" src="/assets/bag.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >ECommerce</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example9" class="hidden py-1 space-y-1">
+                  <li>
+                    <a
+                      
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Product Details</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Shooping Cart</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Checkout</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Wishlist</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  type="button"
+                  class="flex items-center w-full p-2 text-sm text-black-600 transition duration-75 rounded-lg group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-example10"
+                  data-collapse-toggle="dropdown-example10"
+                >
+                  <img class="w-5 h-5 grayscale-50" src="/assets/bag.png" alt="" />
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-normal"
+                    >Custom Pages</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <ul id="dropdown-example10" class="hidden py-1 space-y-1">
+                  <li>
+                    <a
+                    
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-gray-700"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Register</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Forget Password</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Lock Screen</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >Under Construction</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >400</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >401</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >403</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >404</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >500</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center font-normal text-sm w-full p-2 text-black-600 transition duration-75 rounded-lg pl-11 group hover:text-blue-500 dark:text-white dark:hover:bg-black-700"
+                      >503</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="main w-full flex-row">
+  <div class="topbar w-full flex justify-between p-3 h-16 items-center">
+    <div>
+      <div class="left flex space-x-6 items-center">
+        <img class="w-4 h-4" src="/assets/menu.png" alt="leftbar" />
+
+        <div class="searchbar w-52 flex items-center">
+          <input
+            class="w-52 h-7 relative border-gray-200 p-4 rounded"
+            type="text"
+            placeholder="Search..."
+          />
+          <img
+            class="h-6 relative right-7 pr-5"
+            src="/assets/magnifying-glass.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="right flex space-x-6 items-center pr-3">
+      <img class="w-4 h-4" src="/assets/moon.png" alt="moon" />
+      <img class="w-4 h-4" src="/assets/frame.png" alt="frame" />
+      <img class="w-4 h-4" src="/assets/bell.png" alt="bell" />
+      <img class="w-4 h-4" src="/assets/envelope.png" alt="envelope" />
+      <img
+        class="w-8 h-8 rounded-full"
+        src="/assets/MicrosoftTeams-image.png"
+        alt="img"
+      />
+      <img class="w-4 h-4" src="/assets/right menu.png" alt="rightbar" />
+      <img class="w-8 h-8" src="/assets/settings.gif" alt="settings" />
+    </div>
+  </div>
+  
+    <router-outlet></router-outlet>
+  </div>
+</div>
